@@ -1,4 +1,4 @@
-baseURL = 'https://llmdev.ai.br/'
+baseURL = 'https://llmdev.ia.br/'
 languageCode = 'en-us'
 title = "LLMDev"
 copyright = 'LLMDev.BR | Valdecir Carvalho | valdecir.me' # Used in the footer copyright mention.
