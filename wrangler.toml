@@ -1,5 +1,6 @@
 name = "blog-llmdev"
 compatibility_date = "2026-02-14"
+preview_urls = true
 
 [assets]
 directory = "./public"

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://llmdev.ai.br/sitemap.xml
+Sitemap: https://llmdev.ia.br/sitemap.xml
