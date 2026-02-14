@@ -1,39 +1,42 @@
 ---
-// Import the global.css file here so that it is included on
-// all pages through the use of the <BaseHead /> component.
-import '../styles/global.css';
-import type { ImageMetadata } from 'astro';
-import FallbackImage from '../assets/blog-placeholder-1.jpg';
-import { SITE_TITLE } from '../consts';
+import { SITE_BASE } from '@/consts'
+import '../styles/global.css'
 
 interface Props {
-	title: string;
-	description: string;
-	image?: ImageMetadata;
+	title: string
+	description: string
+	image?: string
 }
 
-const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const canonicalURL = new URL(Astro.url.pathname, Astro.site)
 
-const { title, description, image = FallbackImage } = Astro.props;
+const { title, description, image = `${SITE_BASE}/saral-og.jpg` } = Astro.props
 ---
+
+<!-- Prevent search indexing for theme demo page --><!-- REMOVE FOR YOUR SITE -->
+<meta name="robots" content="noindex" />
 
 <!-- Global Metadata -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-<link rel="icon" href="/favicon.ico" />
-<link rel="sitemap" href="/sitemap-index.xml" />
-<link
-	rel="alternate"
-	type="application/rss+xml"
-	title={SITE_TITLE}
-	href={new URL('rss.xml', Astro.site)}
-/>
 <meta name="generator" content={Astro.generator} />
 
-<!-- Font preloads -->
-<link rel="preload" href="/fonts/atkinson-regular.woff" as="font" type="font/woff" crossorigin />
-<link rel="preload" href="/fonts/atkinson-bold.woff" as="font" type="font/woff" crossorigin />
+<!-- Favicons -->
+<link
+	rel="icon"
+	type="image/png"
+	href={`${SITE_BASE}/favicon-96x96.png`}
+	sizes="96x96"
+/>
+<link rel="icon" type="image/svg+xml" href={`${SITE_BASE}/favicon.svg`} />
+<link rel="shortcut icon" href={`${SITE_BASE}/favicon.ico`} />
+<link
+	rel="apple-touch-icon"
+	sizes="180x180"
+	href={`${SITE_BASE}/apple-touch-icon.png`}
+/>
+<meta name="apple-mobile-web-app-title" content="Saral Theme" />
+<link rel="manifest" href={`${SITE_BASE}/site.webmanifest`} />
 
 <!-- Canonical URL -->
 <link rel="canonical" href={canonicalURL} />
@@ -48,11 +51,19 @@ const { title, description, image = FallbackImage } = Astro.props;
 <meta property="og:url" content={Astro.url} />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
-<meta property="og:image" content={new URL(image.src, Astro.url)} />
+<meta property="og:image" content={new URL(image, Astro.url)} />
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:url" content={Astro.url} />
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
-<meta property="twitter:image" content={new URL(image.src, Astro.url)} />
+<meta property="twitter:image" content={new URL(image, Astro.url)} />
+
+<!-- RSS Auto-discovery -->
+<link
+	rel="alternate"
+	type="application/rss+xml"
+	title="Saral Theme RSS Feed"
+	href={new URL('rss.xml', Astro.site)}
+/>
