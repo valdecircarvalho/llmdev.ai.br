@@ -1,19 +1,31 @@
-import { defineCollection, z } from 'astro:content';
-import { glob } from 'astro/loaders';
+import { defineCollection } from "astro:content";
+import { glob } from "astro/loaders";
+import { BlogMetadata } from "./schemas/blog";
+import { CardMetadata } from "./schemas/card";
+import { DoodleMetadata } from "./schemas/doodle";
+import { SlideMetadata } from "./schemas/slide";
 
-const blog = defineCollection({
-	// Load Markdown and MDX files in the `src/content/blog/` directory.
-	loader: glob({ base: './src/content/blog', pattern: '**/*.{md,mdx}' }),
-	// Type-check frontmatter using a schema
-	schema: ({ image }) =>
-		z.object({
-			title: z.string(),
-			description: z.string(),
-			// Transform string to Date object
-			pubDate: z.coerce.date(),
-			updatedDate: z.coerce.date().optional(),
-			heroImage: image().optional(),
-		}),
+const blogs = defineCollection({
+  loader: glob({
+    base: "./src/content/blogs",
+    pattern: "**/[0-9][0-9][0-9][0-9]-[0-9][0-9]/*.{md,mdx}",
+  }),
+  schema: BlogMetadata,
 });
 
-export const collections = { blog };
+const cards = defineCollection({
+  loader: glob({ base: "./src/content/cards", pattern: "**/*.{md,mdx}" }),
+  schema: CardMetadata,
+});
+
+const slides = defineCollection({
+  loader: glob({ base: "./src/content/slides", pattern: "**/*.{md,mdx}" }),
+  schema: SlideMetadata,
+});
+
+const doodles = defineCollection({
+  loader: glob({ base: "./src/content/doodles", pattern: "**/*.{md,mdx}" }),
+  schema: DoodleMetadata,
+});
+
+export const collections = { blogs, cards, slides, doodles };

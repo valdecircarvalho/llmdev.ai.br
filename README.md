@@ -1,45 +1,61 @@
-# llmdev.ai.br (Astro)
+# MonaKit
 
-Blog em Astro neste mesmo repositório, com estratégia de teste de temas por branch.
+Multi-format content platform built with Astro, featuring knowledge cards, articles, presentations, and announcements.
 
-## Branches
+## Features
 
-- `main`: produção
-- `themes-base`: base Astro Blog limpa
-- `themes-1`: tema candidato 1
-- `themes-2`: tema candidato 2
-- `themes-3`: tema candidato 3
+- **Knowledge Cards** - Research summaries with customizable themes
+- **Articles** - Long-form blog content
+- **Slide Presentations** - Interactive reveal.js presentations
+- **Doodles** - Release logs and announcements (Mona Pulse)
+- **Search** - Full-text search with Pagefind
+- **Promotion** - Product and link showcase
 
-## Rodar localmente
+## Tech Stack
 
-```sh
-npm install
-npm run dev
+- Astro 5 (SSR)
+- React 19
+- TailwindCSS 4
+- Reveal.js
+- Pagefind
+
+## Quick Start
+
+```bash
+npm create astro@latest my-astro-project -- --template monakit/monakit
 ```
 
-Build de validação:
+## Development
 
-```sh
-npm run build
+```bash
+pnpm install
+cp .env.example .env
+pnpm migrate
+pnpm dev
 ```
 
-## Fluxo para testar temas
+### Available Scripts
 
-1. Escolha a branch de teste (`themes-1`, `themes-2` ou `themes-3`).
-2. Instale e aplique o tema nessa branch.
-3. Rode `npm run build` para validar.
-4. Faça commit somente das mudanças desse tema.
-5. Compare as branches (visual, performance, SEO e facilidade de customização).
-
-Troca rápida de branch:
-
-```sh
-git checkout themes-1
-git checkout themes-2
-git checkout themes-3
+```bash
+pnpm dev                # Start dev server
+pnpm build              # Production build (auto-builds search index)
+pnpm build:search-index # Build search index manually
+pnpm check              # Type check and lint
+pnpm fix                # Auto-fix issues
 ```
 
-## Stack
+## Content Structure
 
-- [Astro](https://astro.build)
-- Template inicial: `blog`
+```
+src/content/
+├── cards/    # Knowledge cards (Markdown)
+├── blogs/    # Blog articles (Markdown)
+├── slides/   # Presentations (Markdown)
+└── doodles/  # Announcements (Markdown)
+```
+
+Content organized by year/month subdirectories.
+
+## Product Data
+
+All products data is defined in `src/assets/creations.json`.
