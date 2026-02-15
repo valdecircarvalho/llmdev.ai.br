@@ -1,7 +1,7 @@
 ---
-title: AI Devtools Landscape
+title: /AI Devtools Landscape
 date: "2025-02-02"
-categories: [llm]
+categories: [hoje-eu-descobri, llm, dev-tools]
 ---
 
 AI Devtools Landscape é uma coleção de ferramentas para desenvolvedores de IA.

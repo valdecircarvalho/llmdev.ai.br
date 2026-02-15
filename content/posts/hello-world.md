@@ -1,13 +1,17 @@
 ---
-title: Hello World
+title: /Hello World
 date: 2025-12-31
 categories: [blog]
 ---
 
-Hello World! 
+Hello World: Feito por IA! 
 
-Seja Bem-Vindo ao LLMDev.BR
+Seja Bem-Vindo ao LLMDev
 
-Um blog sobre Generative AI, LLMs, arquitetura e desenvolvimento de software.
+Um blog sobre IA Generativa, LLMs, Arquitetura e Desenvolvimento de Software 100% focado em IA. 
 
-SHOW!
+Aqui vou compartilhar meus estudos, descobertas e experiências com IA Generativa, LLMs, Arquitetura e Desenvolvimento de Software.
+
+Espero que você goste e que possamos aprender juntos!
+
+Até a próxima!
