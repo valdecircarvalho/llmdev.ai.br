@@ -1,6 +1,6 @@
 baseURL = 'https://llmdev.ia.br/'
-languageCode = 'en-us'
-title = "LLMDev"
+languageCode = 'pt-br'
+title = ">_ LLMDev"
 copyright = 'LLMDev.BR | Valdecir Carvalho | valdecir.me' # Used in the footer copyright mention.
 enableRobotsTXT = true # IMPORTANT: set to true if you want to use the theme's genAI/LLM web crawler blocking feature.
 theme = 'til'

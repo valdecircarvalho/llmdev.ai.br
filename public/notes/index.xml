@@ -1,6 +1,31 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Notas on LLMDev</title><link>https://llmdev.ia.br/notes/</link><description>Recent content in Notas on LLMDev</description><generator>Hugo</generator><language>en-us</language><managingEditor>johndoe@example.com (O LLMDevBR)</managingEditor><webMaster>johndoe@example.com (O LLMDevBR)</webMaster><copyright>LLMDev.BR | Valdecir Carvalho | valdecir.me</copyright><lastBuildDate>Thu, 06 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://llmdev.ia.br/notes/index.xml" rel="self" type="application/rss+xml"/><item><title>/Google Labs</title><link>https://llmdev.ia.br/notes/google-labs/</link><pubDate>Thu, 06 Feb 2025 00:00:00 +0000</pubDate><author>johndoe@example.com (O LLMDevBR)</author><guid>https://llmdev.ia.br/notes/google-labs/</guid><description>&lt;p&gt;Sempre gosto de visitar o site do Google Labs, onde eles mostram os seus experimentos e pesquisas. Recentemente descobri lá o &lt;a href="https://stitch.withgoogle.com/"&gt;Stich&lt;/a&gt; para criar interfaces de usuário, como se fosse um Figma. Super recomendo adicionar aos favoritos e visitar sempre para descobrir coisas novas e interessantes.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Notas on &gt;_ LLMDev</title><link>https://llmdev.ia.br/notes/</link><description>Recent content in Notas on &gt;_ LLMDev</description><generator>Hugo</generator><language>pt-br</language><managingEditor>johndoe@example.com (O LLMDevBR)</managingEditor><webMaster>johndoe@example.com (O LLMDevBR)</webMaster><copyright>LLMDev.BR | Valdecir Carvalho | valdecir.me</copyright><lastBuildDate>Sat, 15 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://llmdev.ia.br/notes/index.xml" rel="self" type="application/rss+xml"/><item><title>/Fast Resume</title><link>https://llmdev.ia.br/notes/fast-resume/</link><pubDate>Sat, 15 Feb 2025 00:00:00 +0000</pubDate><author>johndoe@example.com (O LLMDevBR)</author><guid>https://llmdev.ia.br/notes/fast-resume/</guid><description>&lt;p&gt;Descobri uma ferramenta muito legal para pesquisar e retornar conversas no Claude Code, Codex Cli e outras tudo em um único lugar.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/angristan/fast-resume"&gt;https://github.com/angristan/fast-resume&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Pesquise e retome conversas no Claude Code, Codex e muito mais, tudo em um único lugar.&lt;/p&gt;
+&lt;p&gt;Por que o fast-resume?&lt;/p&gt;
+&lt;p&gt;Os agentes de codificação estão muito bons atualmente, então estou usando vários deles. Às vezes, lembro que eu, ou o LLM, mencionamos algo específico em uma sessão anterior e quero voltar a esse ponto.&lt;/p&gt;</description></item><item><title>/Google Labs</title><link>https://llmdev.ia.br/notes/google-labs/</link><pubDate>Thu, 06 Feb 2025 00:00:00 +0000</pubDate><author>johndoe@example.com (O LLMDevBR)</author><guid>https://llmdev.ia.br/notes/google-labs/</guid><description>&lt;p&gt;Sempre gosto de visitar o site do Google Labs, onde eles mostram os seus experimentos e pesquisas. Recentemente descobri lá o &lt;a href="https://stitch.withgoogle.com/"&gt;Stich&lt;/a&gt; para criar interfaces de usuário, como se fosse um Figma. Super recomendo adicionar aos favoritos e visitar sempre para descobrir coisas novas e interessantes.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://labs.google.com/"&gt;https://labs.google.com/&lt;/a&gt;&lt;/p&gt;</description></item><item><title>/Gemini Drops</title><link>https://llmdev.ia.br/notes/gemini-drops/</link><pubDate>Tue, 04 Feb 2025 00:00:00 +0000</pubDate><author>johndoe@example.com (O LLMDevBR)</author><guid>https://llmdev.ia.br/notes/gemini-drops/</guid><description>&lt;p&gt;O Gemini está sempre evoluindo, mas com o Gemini Drops, ficou mais fácil acompanhar os lançamentos. Confira esta página regularmente para ver anúncios de recursos, dicas de produtos e saber como nossa comunidade está usando o Gemini para criar, pesquisar e muito mais.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://gemini.ai/drops"&gt;https://gemini.ai/drops&lt;/a&gt;&lt;/p&gt;</description></item><item><title>/AI Devtools Landscape</title><link>https://llmdev.ia.br/notes/ainativelandscape/</link><pubDate>Sun, 02 Feb 2025 00:00:00 +0000</pubDate><author>johndoe@example.com (O LLMDevBR)</author><guid>https://llmdev.ia.br/notes/ainativelandscape/</guid><description>&lt;p&gt;AI Devtools Landscape é uma coleção de ferramentas para desenvolvedores de IA.&lt;/p&gt;
 &lt;p&gt;Um grande catálogo de produtos e ferramentas, eventos, artigos, podcasts sobre AI.&lt;/p&gt;
 &lt;p&gt;Eu sempre volto nesse site para encontrar ferramentas novas.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://ainativedev.io/landscape"&gt;https://ainativedev.io/landscape&lt;/a&gt;&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;&lt;a href="https://ainativedev.io/landscape"&gt;https://ainativedev.io/landscape&lt;/a&gt;&lt;/p&gt;</description></item><item><title/><link>https://llmdev.ia.br/notes/claude-code-recursos/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>johndoe@example.com (O LLMDevBR)</author><guid>https://llmdev.ia.br/notes/claude-code-recursos/</guid><description>&lt;ol&gt;
+&lt;li&gt;Agent Skills Marketplace - nearly 60,00 Claude Skills! &lt;em&gt;insanely useful&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;https:// skillsmp. com/&lt;/p&gt;
+&lt;ol start="2"&gt;
+&lt;li&gt;MCP Tools - a complete site dedicated to MCP&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;https: //modelcontextprotocol. io/docs/develop/connect-local-servers&lt;/p&gt;
+&lt;ol start="3"&gt;
+&lt;li&gt;Prompt Library - Anthropic&amp;rsquo;s battle-tested prompt library&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;https: //platform.claude. com/docs/en/resources/prompt-library/library&lt;/p&gt;
+&lt;ol start="4"&gt;
+&lt;li&gt;Awesome Claude Skills - A curated list of Claude Skills to use now&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;https: //github. com/BehiSecc/ awesome-claude-skills/&lt;/p&gt;
+&lt;ol start="5"&gt;
+&lt;li&gt;Awesome Claude Code - A curated list of slash commands, .MD files, and more&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;https:// github. com /hesreallyhim/ awesome-claude-code&lt;/p&gt;</description></item></channel></rss>

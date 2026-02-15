@@ -1,0 +1,189 @@
+:root {
+  color: #101828;
+  background: #f8fafc;
+  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.page {
+  min-height: 100vh;
+  padding: 24px;
+}
+
+.page-center {
+  display: grid;
+  place-items: center;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.topbar nav {
+  display: flex;
+  gap: 8px;
+}
+
+.card {
+  border: 1px solid #d0d5dd;
+  border-radius: 10px;
+  background: #fff;
+  padding: 16px;
+}
+
+.auth-card {
+  width: min(420px, 100%);
+}
+
+input,
+textarea,
+select,
+button {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #98a2b3;
+  padding: 10px;
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+  background: #111827;
+  color: #fff;
+  border: 1px solid #111827;
+  width: auto;
+}
+
+button.active {
+  background: #0b5fff;
+  border-color: #0b5fff;
+}
+
+button.danger {
+  background: #b42318;
+  border-color: #b42318;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.status {
+  color: #05603a;
+}
+
+.error {
+  color: #b42318;
+}
+
+.dashboard-actions,
+.search-row,
+.button-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.dashboard-actions > div,
+.search-row > * {
+  flex: 1;
+}
+
+.content-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.content-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  border: 1px solid #eaecf0;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.content-list li span {
+  display: block;
+  color: #475467;
+  font-size: 13px;
+}
+
+.list-meta {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.editor-layout {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 1fr;
+}
+
+.form-grid {
+  display: grid;
+  gap: 10px;
+}
+
+label {
+  display: grid;
+  gap: 6px;
+  font-size: 14px;
+}
+
+.checkbox-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.checkbox-row input {
+  width: auto;
+}
+
+.editor-textarea {
+  min-height: 320px;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.preview {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.preview pre {
+  background: #0f172a;
+  color: #f8fafc;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.publish-result pre {
+  max-height: 260px;
+  overflow: auto;
+  background: #f3f4f6;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+@media (min-width: 1080px) {
+  .editor-layout {
+    grid-template-columns: 1fr 1fr;
+  }
+}

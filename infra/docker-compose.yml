@@ -1,0 +1,31 @@
+services:
+  api:
+    build:
+      context: ../apps/cms-api
+    env_file:
+      - ../apps/cms-api/.env
+    volumes:
+      - ../:/workspace/blog
+      - cms_data:/data
+    restart: unless-stopped
+
+  web:
+    build:
+      context: ../apps/cms-web
+      args:
+        VITE_API_BASE: /api/v1
+    restart: unless-stopped
+
+  proxy:
+    image: nginx:1.27-alpine
+    depends_on:
+      - api
+      - web
+    ports:
+      - "8080:80"
+    volumes:
+      - ./nginx/proxy.conf:/etc/nginx/conf.d/default.conf:ro
+    restart: unless-stopped
+
+volumes:
+  cms_data:

@@ -5,6 +5,18 @@
 
 # Node dependencies
 /node_modules/
+apps/cms-web/node_modules/
+apps/cms-web/dist/
+*.tsbuildinfo
 
 # macOS
 .DS_Store
+
+# Python artifacts
+__pycache__/
+*.pyc
+apps/cms-api/.venv/
+
+# CMS runtime files
+apps/cms-api/.env
+apps/cms-api/data/
